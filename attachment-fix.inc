@@ -70,7 +70,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 								PR_BOOL, 0
 							);
 							
-							BS_RPC(bs, playerid, 113);
+							PR_SendRPC(bs, playerid, 113);
 							BS_Delete(bs);
 						}
 					}
@@ -108,7 +108,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 							PR_INT32, _J_AttachmentsEnum[playerid][i][_J_MaterialColor2]
 						);
 						
-						BS_RPC(bs, playerid, 113); 
+						PR_SendRPC(bs, playerid, 113); 
 						BS_Delete(bs);							
 					}
 				}
